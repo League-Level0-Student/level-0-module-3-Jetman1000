@@ -14,7 +14,7 @@ public class BananaQuiz
 		String nice= "yes";
 		String y=JOptionPane.showInputDialog("Do you like bananas?");
 		//2. if they say no, 
-		if(y==cool){
+		if(y.equalsIgnoreCase("no")){
 			JOptionPane.showMessageDialog(null, "Boi you Crazy!");
 			System.exit(0);
 		}
@@ -24,20 +24,21 @@ public class BananaQuiz
 			//and end quiz
 		
 		//3. if they say yes
-		if(y==nice){
+		else if(y.equalsIgnoreCase("yes")){
 			String v=JOptionPane.showInputDialog("what's your favorite hobby");
-			JOptionPane.showMessageDialog(null, v+" is much with bananas! ");
+			JOptionPane.showMessageDialog(null, v+" is much better with bananas! ");
 		}
+		
 		//	ask them what is their favorite hobby
 		
 		//	show a pop up that says "<your hobby> is much better with bananas!"
 		
 
 		//4. OPTIONAL: if they say something other than â€œyesâ€� or â€œnoâ€�
-		if(y != nice){
+		else if(y != nice){
 			JOptionPane.showMessageDialog(null, "You're bananas!");
 		}
-		if(y != cool){
+		else if(y != cool){
 			JOptionPane.showMessageDialog(null, "You're bananas!");
 		}
 		//	show a pop up that says â€œYou are bananas!â€�

@@ -13,7 +13,7 @@ public static void main(String[] args) {
 	int ran= randy.nextInt(176)+317;
 	int rran= randy.nextInt(200)+124;
 	System.out.println(rand);
-	JOptionPane.showMessageDialog(null, "The numbers are ")+rand+"100"+ralp+"126+100"+randyy+"86+225"+ran+"176+317"rran+"200+124";
+	JOptionPane.showMessageDialog(null, "The numbers are "+rand+"100"+ ralph +"126+100"+randyy+"86+225"+ran+"176+317"+rran+"200+124");
 	
 }
 }
